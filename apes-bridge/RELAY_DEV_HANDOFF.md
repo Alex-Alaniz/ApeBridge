@@ -76,16 +76,18 @@
 # Change to the project directory
 cd apes-bridge
 
-# Install dependencies
-yarn install
+# Install dependencies (using legacy peer deps to handle conflicts)
+yarn install --legacy-peer-deps
 # or
-npm install
+npm install --legacy-peer-deps
 
 # Run the dev server
 yarn dev
 # or
 npm run dev
 ```
+
+**Note:** We use `--legacy-peer-deps` to handle dependency conflicts between `viem`, `wagmi`, and Relay packages. This is a temporary solution until the packages update their peer dependencies.
 
 **No build steps or custom scripts required.**
 
