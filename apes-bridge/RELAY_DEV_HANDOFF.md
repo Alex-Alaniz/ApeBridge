@@ -73,6 +73,9 @@
 
 ## Setup Script
 ```bash
+# Change to the project directory
+cd apes-bridge
+
 # Install dependencies
 yarn install
 # or
