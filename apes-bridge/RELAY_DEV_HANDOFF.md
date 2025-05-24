@@ -72,19 +72,19 @@
 ---
 
 ## Setup Script
-- **Install dependencies:**
-  ```bash
-  yarn install
-  # or
-  npm install
-  ```
-- **Run the dev server:**
-  ```bash
-  yarn dev
-  # or
-  npm run dev
-  ```
-- **No build steps or custom scripts required.**
+```bash
+# Install dependencies
+yarn install
+# or
+npm install
+
+# Run the dev server
+yarn dev
+# or
+npm run dev
+```
+
+**No build steps or custom scripts required.**
 
 ---
 
