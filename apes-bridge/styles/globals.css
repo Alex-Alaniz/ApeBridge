@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles to match Relay design */
+:root {
+  --relay-primary: #8B5CF6;
+  --relay-primary-hover: #7C3AED;
+  --relay-border-radius: 16px;
+}
+
+/* Override Relay Kit UI styles to match design */
+.relay-kit-provider {
+  --rk-colors-accent: var(--relay-primary);
+  --rk-colors-accent-hover: var(--relay-primary-hover);
+  --rk-border-radius: var(--relay-border-radius);
+}
+
+/* Improve the overall widget appearance */
+.relay-swap-widget {
+  border-radius: var(--relay-border-radius) !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Style wallet connection buttons */
+.wallet-adapter-button {
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+
+.wallet-adapter-button:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4) !important;
+}
+
+/* Custom button styles */
+.apes-button {
+  @apply px-4 py-2 rounded-xl font-semibold transition-all duration-200 ease-in-out;
+}
+
+.apes-button-primary {
+  @apply bg-purple-600 text-white hover:bg-purple-700 hover:shadow-lg hover:-translate-y-0.5;
+}
+
+.apes-button-secondary {
+  @apply bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-md;
+}
+
+/* Animate the bridge info cards */
+.bridge-info-card {
+  @apply transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1;
+}
+
+/* Loading states */
+.loading-pulse {
+  @apply animate-pulse bg-gradient-to-r from-purple-200 to-blue-200;
+}
+
+/* Toast customization */
+.toast-success {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+}
+
+.toast-error {
+  background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+}
+
+/* Relay Bridge exact styles */
+.relay-app {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #fafbfc;
+  min-height: 100vh;
+}
+
+/* Override default Relay Kit styles to match exact design */
+[data-rk] {
+  --rk-colors-accent: #6366f1;
+  --rk-colors-accent-hover: #4f46e5;
+  --rk-colors-background: #ffffff;
+  --rk-colors-foreground: #1f2937;
+  --rk-colors-foreground-secondary: #6b7280;
+  --rk-border-radius: 16px;
+  --rk-colors-border: #e5e7eb;
+}
+
+/* Match Relay's exact widget styling */
+.rkui-swap-widget {
+  border: 1px solid #e5e7eb !important;
+  border-radius: 16px !important;
+  background: white !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Button styles to match Relay exactly */
+.relay-button {
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+}
+
+.relay-button-primary {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.relay-button-primary:hover {
+  background: #e5e7eb;
+}
+
+/* Trending section exact match */
+.trending-item {
+  border-radius: 24px;
+  padding: 8px 16px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.15s ease;
+}
+
+.trending-item-active {
+  background: #1f2937;
+  color: white;
+}
+
+.trending-item-inactive {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.trending-item-inactive:hover {
+  background: #e5e7eb;
+}
+
+/* Navigation exact styling */
+.relay-nav {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  height: 64px;
+}
+
+.relay-nav-button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.15s ease;
+}
+
+.relay-nav-button-active {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.relay-nav-button:hover {
+  color: #1f2937;
+}
+
+/* Balance display */
+.balance-display {
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Remove any conflicting styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove unused swap direction styles - using Relay's built-in functionality */
